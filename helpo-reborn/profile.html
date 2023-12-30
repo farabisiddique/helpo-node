@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome 5 Free CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <!-- Header (navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light helpoNavbar">
+        <a class="navbar-brand mr-5" href="./index.html">
+            <img src="./img/logo.png" alt="Logo" style="max-height: 40px;">
+        </a>
+        <!-- Search Bar -->
+        <form class="col-lg-6 ml-5 pl-5 form-inline mx-auto d-none d-lg-block">
+            <input class="ml-5 form-control wider-search-box mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 searchNow">
+                <i class="fas fa-search text-white"></i>
+            </button>
+            
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contact Us</a>
+                </li>
+                <!-- User Dropdown for logged-in users -->
+                <!-- User dropdown -->
+                <li class="nav-item dropdown hover-dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="./img/user.jpg" class="rounded-circle" style="height: 30px;">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-cogs"></i> Settings</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-key"></i> Change Password</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">                
+            <!-- User's profile picture on the left -->
+            <div class="col-md-3 mb-4 text-center">
+                <div class="profile-pic-container">
+                    <img src="./img/user.jpg" alt="User's Profile Picture" class="img-fluid rounded-circle profile-pic">
+                </div>
+            </div>        
+    
+            <!-- User's details on the right -->
+            <div class="col-md-9 pl-0">
+                
+                <!-- User's full name -->
+                <h3>Ikhtiar Uddin Mohammad Bin Bokhtiar Khilji</h3>
+                <p class="m-0">Full Stack Web Developer</p>
+                <div class="mb-3">
+                    <p class="m-0"><strong>Helped in:</strong> 100 Tasks</p>
+                    <p><strong>Sought:</strong> 100 Helps</p>
+                </div>
+                <!-- User's ratings and star icons -->
+                <div class="d-flex align-items-center">
+                    <p class="mb-0 mr-2">Rating: <strong>4.0</strong></p>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="m-0"><strong>Reviews:</strong> 100</p>
+    
+                <!-- Tasks and Helps data -->
+                
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <h5>About Me:</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium eros eu nunc porttitor, a elementum urna tincidunt.</p>
+            </div>
+
+            <div class="col-md-12 mb-3">
+                <h5>Skills:</h5>
+                <button class="btn btn-outline-secondary btn-sm mr-2 mb-2">HTML</button>
+                <button class="btn btn-outline-secondary btn-sm mr-2 mb-2">CSS</button>
+                <!--... add other buttons similarly ...-->
+            </div>
+            
+            
+
+            <!-- Social Profiles -->
+            <h5 class="p-3">Social Profiles:</h5>
+            <div class="col-md-12 mb-3 d-flex justify-content-start">
+                
+                <button class="btn social-btn mr-2"><i class="fab fa-facebook-f"></i> Facebook</button>
+                <button class="btn social-btn mr-2"><i class="fab fa-twitter"></i> Twitter</button>
+                <button class="btn social-btn mr-2"><i class="fab fa-linkedin-in"></i> LinkedIn</button>
+            </div>
+            
+
+            <!-- User's portfolio -->
+            <div class="col-md-12 mb-3 mt-2">
+                <h5>Portfolio:</h5>
+                <div class="row">
+                    <div class="col-md-3 p-0 mb-4 mr-3 portfolio-item">
+                        <img src="./img/portfolio/p1.png" alt="Project 1" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-btn zoomPortfolioBtn" title="Zoom"><i class="fas fa-search"></i></button>
+                            <button class="portfolio-btn linkPortfolioBtn" title="Go to link"><i class="fas fa-link"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 p-0 mb-4 mr-3 portfolio-item">
+                        <img src="./img/portfolio/p2.png" alt="Project 1" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-btn zoomPortfolioBtn" title="Zoom"><i class="fas fa-search"></i></button>
+                            <button class="portfolio-btn linkPortfolioBtn" title="Go to link"><i class="fas fa-link"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 p-0 mb-4 mr-3 portfolio-item">
+                        <img src="./img/portfolio/p3.png" alt="Project 1" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-btn zoomPortfolioBtn" title="Zoom"><i class="fas fa-search"></i></button>
+                            <button class="portfolio-btn linkPortfolioBtn" title="Go to link"><i class="fas fa-link"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 p-0 mb-4 mr-3 portfolio-item">
+                        <img src="./img/portfolio/p1.png" alt="Project 1" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-btn zoomPortfolioBtn" title="Zoom"><i class="fas fa-search"></i></button>
+                            <button class="portfolio-btn linkPortfolioBtn" title="Go to link"><i class="fas fa-link"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 p-0 mb-4 mr-3 portfolio-item">
+                        <img src="./img/portfolio/p2.png" alt="Project 1" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-btn zoomPortfolioBtn" title="Zoom"><i class="fas fa-search"></i></button>
+                            <button class="portfolio-btn linkPortfolioBtn" title="Go to link"><i class="fas fa-link"></i></button>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- ... Add more as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 helpoFooter">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>
+                        <img src="./img/logo.png" alt="Logo" style="max-height: 30px; vertical-align: middle;">
+                        
+                    </h4>
+                    <p>
+                        Connecting seekers and helpers across the world.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled float-right">
+                        <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="portfolioZoomModal" tabindex="-1" aria-labelledby="portfolioZoomModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <!-- <div class="modal-body text-center">
+                    <button type="button" id="prevImage" class="btn btn-secondary">Previous</button>
+                    <img src="" alt="Zoomed Portfolio Item" class="img-fluid" id="zoomedImage">
+                    <button type="button" id="nextImage" class="btn btn-secondary">Next</button>
+                </div> -->
+                <div class="modal-content">
+                    <span id="prevImage" class="portfolio-navigation-btn left"><i class="fas fa-chevron-left"></i></span>
+                    <img id="zoomedImage" class="img-fluid" src="" alt="Zoomed Image">
+                    <span id="nextImage" class="portfolio-navigation-btn right"><i class="fas fa-chevron-right"></i></span>
+                    <span class="closeModal" data-dismiss="modal"><i class="fas fa-times"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".zoomPortfolioBtn").click(function(event) {
+                event.stopPropagation();  // Prevents triggering other click events
+
+                let imgSrc = $(this).closest('.portfolio-item').find('.portfolio-img').attr('src');
+                $('#zoomedImage').attr('src', imgSrc);
+                $('#portfolioZoomModal').modal('show');
+            });
+
+            let images = $(".portfolio-img");
+            let currentIndex;
+
+            $(".zoomPortfolioBtn").click(function() {
+                currentIndex = images.index($(this).closest('.portfolio-item').find('.portfolio-img'));
+            });
+
+            $("#nextImage").click(function() {
+                currentIndex = (currentIndex + 1) % images.length;
+                let imgSrc = images.eq(currentIndex).attr('src');
+                $('#zoomedImage').attr('src', imgSrc);
+            });
+
+            $("#prevImage").click(function() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                let imgSrc = images.eq(currentIndex).attr('src');
+                $('#zoomedImage').attr('src', imgSrc);
+            });
+
+
+
+           
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard for Seekers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <!-- Header (navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light helpoNavbar">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./img/logo.png" alt="Logo" style="max-height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <!-- Post a new Order -->
+        <div class="mb-4">
+            <h3>Post a new Order</h3>
+            <button class="btn spectacularBtn">Post Order</button>
+        </div>
+
+        <!-- List of posted orders -->
+        <div class="mb-4">
+            <h3>Your Posted Orders</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Order 1 - Status: <span class="badge badge-primary">New</span></li>
+                <li class="list-group-item">Order 2 - Status: <span class="badge badge-warning">In Progress</span></li>
+                <li class="list-group-item">Order 3 - Status: <span class="badge badge-success">Completed</span></li>
+            </ul>
+        </div>
+
+        <!-- Bids Table -->
+        <div class="mb-4">
+            <h3>Bids for your Orders</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Order Name</th>
+                        <th>Helper</th>
+                        <th>Bid Amount</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Order 1</td>
+                        <td>John Doe</td>
+                        <td>$100</td>
+                        <td><button class="btn btn-info btn-sm">View</button></td>
+                    </tr>
+                    <!-- ... Other Rows ... -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Chat Interface (basic) -->
+        <!-- <div class="mb-4">
+            <h3>Chat with Helpers</h3>
+            <div class="border rounded p-3" style="height: 300px;">
+            </div>
+            <textarea class="form-control mt-2" placeholder="Type your message..."></textarea>
+            <button class="btn spectacularBtn mt-2">Send</button>
+        </div> -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 helpoFooter">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>
+                        <img src="./img/logo.png" alt="Logo" style="max-height: 30px; vertical-align: middle;">
+                        
+                    </h4>
+                    <p>
+                        Connecting seekers and helpers across the world.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled float-right">
+                        <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,522 @@
+:root {
+    --mainBgColor: rgba(43,62,80,1);
+    --white: #ffffff;
+}
+.helpoNavbar{
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: var(--mainBgColor); 
+    background: linear-gradient(270deg, rgba(41,75,88,1) 5%, rgba(43,62,80,1) 72%);
+}
+
+.helpoNavbar .nav-link, .helpoNavbar .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* Regular font weight, but you can adjust as needed */
+}
+
+/* Styling for dropdown menu */
+.dropdown-menu {
+    background-color: rgba(43,62,80,1); /* Color taken from your gradient */
+    border: none; /* Remove the border around the dropdown */
+}
+
+.dropdown-item {
+    color: #fff; /* Set font color to white */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Line below each item */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(41,75,88,0.8); /* Lighten the color a bit on hover */
+}
+
+
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.wider-search-box{
+    width: 80% !important;
+}
+
+
+
+
+
+.helpoContent{
+    background: rgba(45,80,95,0.2);
+    position: relative;
+}
+
+.girl{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/girl.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+
+
+.welcome-text {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 0; /* Adjusted padding */
+    background: linear-gradient(270deg, rgba(41,75,88,1) 5%, rgba(43,62,80,1) 72%);
+    color: #E0E0E0;
+    width: 100%; /* Assuming it spans the full width of its container */
+    border-bottom-left-radius: 50% 30%; /* Adjusts the curvature on the bottom left */
+    border-bottom-right-radius: 50% 30%; /* Adjusts the curvature on the bottom right */
+    overflow: hidden; /* To ensure content inside doesn't spill out of the curved shape */
+    opacity: 0.7;
+}
+
+
+
+.welcome-title {
+    font-weight: 700; /* Bold */
+    font-size: 2.5rem; /* 40px */
+    margin-bottom: 20px; /* Spacing between title and subtitle */
+}
+
+.welcome-subtitle {
+    font-weight: 300; /* Light */
+    font-size: 1.5rem; /* 24px */
+}
+
+.btn-help {
+    background: linear-gradient(90deg, rgba(65,105,225,1) 0%, rgba(131,58,180,1) 100%);
+    border: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);s */
+    transition: transform 0.2s;
+}
+
+
+
+.btn-need {
+    background: linear-gradient(135deg, rgba(59,85,98,1), rgba(31,55,70,1));
+    border: none;
+    color: #FAD02E; /* A brighter gold color for contrast */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Slightly bolder font weight */
+    padding: 10px 20px; /* To ensure button size and space for text */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    /* box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5); */
+    transition: transform 0.2s;
+}
+
+.btn-both {
+    /* background: linear-gradient(112.5deg, rgba(65,105,225,1) 0%, rgba(131,58,180,1) 50%, rgba(59,85,98,1) 50%, rgba(31,55,70,1) 100%); */
+    background: linear-gradient(112.5deg, rgba(31,55,70,1) 0%, rgba(59,85,98,1) 50%, rgba(131,58,180,1) 50%, rgba(65,105,225,1) 100%);
+
+    border: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550; /* Average of the font weights from btn-help and btn-need */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+
+.btn-need:hover, .btn-help:hover, .btn-both:hover {
+    /* transform: scale(1.05);  */
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.5);
+    color: #FAD02E; 
+}
+
+.pop-up {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.5);
+    z-index: 999;
+    /* Other styling as needed */
+}
+
+.pop-down {
+    transform: scale(1);
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.5);
+    /* Other styling as needed */
+}
+
+
+
+.helpoModal {
+    background: linear-gradient(270deg, rgba(41,75,88,1) 5%, rgba(43,62,80,1) 72%);
+    color: #FFFFFF; /* Setting the text color to white for contrast */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5); /* Horizontal offset, vertical offset, blur radius, whitish color */
+}
+
+.spectacularBtn {
+    background: linear-gradient(45deg, #FF5733, #FF8D33); /* A gradient from reddish to orange for the button */
+    border: none;
+    color: #FFFFFF; 
+    transition: 0.3s ease;
+
+    &:hover {
+        background: linear-gradient(45deg, #FF8D33, #FF5733); /* Reversed gradient on hover */
+        transform: scale(1.05); /* Slightly enlarges the button when hovered */
+    }
+}
+
+/* Colors and sizes for radio buttons */
+/* .spectacularBtn {
+    transition: transform 0.3s;
+} */
+
+#option1:checked ~ .btn[for="option1"],
+#option2:checked ~ .btn[for="option2"] {
+    transform: scale(1.1);  /* Makes the selected button 10% larger */
+}
+
+
+
+.helpoModal, .helpoModal h5, .helpoModal label, .helpoModal button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.white-link {
+    color: white;
+}
+
+.white-link:hover {
+    color: #e0e0e0;  /* slightly different shade when hovered, you can adjust this */
+    text-decoration: underline; /* to indicate that it's a clickable link */
+}
+
+
+.social-icon {
+    height: 20px; 
+    width: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+/* Google and Facebook button styles */
+.social-login .btn {
+    font-family: 'Roboto', sans-serif; /* Keeping consistent with the rest of the modal */
+    font-weight: 500; /* Making text a bit bold */
+}
+
+.fbBtn {
+    background: white; /* Facebook color */
+    border: none;
+    color: black;
+}
+
+.googleBtn {
+    background: white; /* Google color */
+    border: none;
+    color: black;
+}
+
+
+
+.helpoFooter{
+    background: linear-gradient(270deg, rgba(45,80,95,1) 5%, rgba(47,67,87,1) 72%);
+}
+
+
+.profile-pic-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* Make sure nothing goes outside this container */
+    border: 3px solid var(--mainBgColor);
+    position: relative; 
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Image should be over the badge */
+}
+
+.profile-pic-container::before {
+    content: "HELPER";
+    position: absolute;
+    top: 8%;
+    left: 37%;
+    transform: rotate(45deg);
+    width: 160px;
+    height: 40px;
+    border-radius: 0px 0px 0 0;
+    background-color: var(--mainBgColor);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    z-index: 2;
+}
+
+.portfolio-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portfolio-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.portfolio-btn:hover {
+    color: #ddd;
+}
+
+
+
+
+
+.portfolio-img {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.portfolio-navigation-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.closeModal {
+    position: absolute;
+    top: -1%;
+    right: -1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+
+/* Social Profiles Buttons */
+.social-btn {
+    background-color: var(--mainBgColor);
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.social-btn:hover {
+    background-color: rgba(43,62,80,1);
+}
+
+
+/* search page  */
+
+.filter-link {
+    text-decoration: none;
+    color: var(--mainBgColor) !important;
+}
+
+.filter-link:hover {
+    text-decoration: underline;
+}
+
+.filter-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.star-rating {
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.star-rating .star {
+    color: var(--mainBgColor);  /* Default color */
+    font-size: 24px;  /* Adjust as needed */
+    margin: 0 5px;  /* Space between stars */
+    transition: color 0.2s;
+}
+
+.star-rating .star.selected {
+    color: gold;  /* Or any color you want for the selected stars */
+}
+
+
+.star-rating .star:hover, 
+.star-rating .star:hover ~ .star {
+    color: var(--mainBgColor);  /* Unselected color on hover */
+}
+
+.star-rating .star:hover ~ .star.active, 
+.star-rating .star.active {
+    color: gold;  /* Selected color */
+}
+
+
+
+.arrow-icons {
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-clear {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin-right: 4px;
+    font-size: 10px;
+    background-color: #5e6d55;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #f5f5f5; /* Adds a subtle hover effect */
+}
+
+.filterBtnBelowSearch{
+    background-color: var(--mainBgColor);
+    color: white;
+}
+
+.filterBtnBelowSearch:hover{
+    color: white;
+}
+
+
+
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+}
+
+.ui-menu-item-wrapper {
+    padding: 8px 10px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .profile-card { */
+     /* Smooth transition for all changes within the card */
+
+/* } */
+
+.user-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.userBadge {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    /* transform: translate(50%, 50%); */
+    color: white;
+}
+
+.singleSearchResult{
+    border: 2px solid #e2e2e2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.singleSearchResult:hover {
+    transform: scale(1.03); /* Slightly scales up the card on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow to elevate the card */
+}
+
+
+.text-truncate-multiline {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /* Show ellipsis after 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.addToFav{
+    position: absolute;
+    top: -30px;
+    right: -10px;
+}
+
+.needHelpBadge{
+    position: absolute;
+    top: -15px;
+    left: -25px;
+    transform: rotate(330deg);
+}
+
+
+
+.display-block {
+    display: block;
+}
+
+
+
+
+
+
+

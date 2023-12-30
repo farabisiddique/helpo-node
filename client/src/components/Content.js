@@ -10,7 +10,7 @@ const Content = ({ setShowLoginModal }) => {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-lg-6 col-md-8 p-5 mx-auto text-center welcome-text">
-                        <h1 className="welcome-title">Welcome to HELPO Website!</h1>
+                        <h1 className="welcome-title">Welcome to HELPO!</h1>
                         <p className="lead welcome-subtitle">
                             A unique platform where you can seek help or provide assistance across the globe.
                         </p>
